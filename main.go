@@ -6,5 +6,6 @@ func main() {
 	a := "Работа с GIT"
 	fmt.Println(a)
 	b := 222
-	fmt.Println(b)
+	c := 333
+	fmt.Println(b + c)
 }
