@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	a := "Работа с GIT"
@@ -8,4 +11,11 @@ func main() {
 	b := 222
 	c := 333
 	fmt.Println(b + c)
+
+	Text, err := os.Create("Text_File")
+	if err != nil {
+		fmt.Println("Файл не удалось создать")
+		os.Exit(1)
+	}
+	defer Text.Close()
 }
