@@ -18,4 +18,5 @@ func main() {
 		os.Exit(1)
 	}
 	defer Text.Close()
+	Text.WriteString("Первая строка")
 }
