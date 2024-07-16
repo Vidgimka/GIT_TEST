@@ -18,5 +18,5 @@ func main() {
 		os.Exit(1)
 	}
 	defer Text.Close()
-	Text.WriteString("Первая строка")
+	Text.WriteString("Первая строка\n ветка about")
 }
