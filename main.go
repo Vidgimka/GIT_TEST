@@ -26,5 +26,5 @@ func main() {
 		os.Exit(1)
 	}
 	defer Text2.Close()
-	Text.WriteString("Первая строка")
+	Text2.WriteString("Первая строка2")
 }
