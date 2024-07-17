@@ -11,4 +11,8 @@ func main() {
 		b = b + 1
 	}
 	fmt.Println(b)
+
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
 }
