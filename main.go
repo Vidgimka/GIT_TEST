@@ -19,4 +19,12 @@ func main() {
 	}
 	defer Text.Close()
 	Text.WriteString("Первая строка")
+
+	Text2, err := os.Create("Text_File2")
+	if err != nil {
+		fmt.Println("Файл не удалось создать")
+		os.Exit(1)
+	}
+	defer Text2.Close()
+	Text.WriteString("Первая строка")
 }
