@@ -23,7 +23,6 @@ func main() {
 	if b > 50 {
 		b = b + 1
 	}
-	fmt.Println(b)
 
 	for i := 0; i < 10; i++ {
 		fmt.Println(i)
