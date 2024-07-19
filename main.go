@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	a := "Работа с GIT"
-	fmt.Println(a)
+
 	b := 222
 	c := 333
 	fmt.Println(b + c)
@@ -20,11 +19,14 @@ func main() {
 	defer Text.Close()
 	Text.WriteString("Первая строка")
 
-	Text2, err := os.Create("Text_File2")
-	if err != nil {
-		fmt.Println("Файл не удалось создать")
-		os.Exit(1)
+	fmt.Println(b)
+	if b > 50 {
+		b = b + 1
 	}
-	defer Text2.Close()
-	Text2.WriteString("Первая строка2")
+	fmt.Println(b)
+
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
 }
